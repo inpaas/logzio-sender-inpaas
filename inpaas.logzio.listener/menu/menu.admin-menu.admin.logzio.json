@@ -1,0 +1,9 @@
+{
+  "parent" : "menu.admin",
+  "type" : "S",
+  "sequence" : 99,
+  "icon" : "fa fa-fw fa-cogs",
+  "label" : "label.logzio",
+  "inactive" : false,
+  "key" : "menu.admin.logzio"
+}

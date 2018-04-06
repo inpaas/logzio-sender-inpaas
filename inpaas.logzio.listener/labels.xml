@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:language-label-package xmlns:ns2="br.com.inpaas">
+    <labels>
+        <label key="inpaas.logzio.listener">
+            <default>Logz.IO - Log Sender</default>
+            <translations/>
+        </label>
+        <label key="label.forms.inpaas.logzio.forms.config.title">
+            <default>label.forms.inpaas.logzio.forms.config.title</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Configurações</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Settings</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="label.logzio">
+            <default>Logz.IO</default>
+            <translations/>
+        </label>
+        <label key="label.logzio_config">
+            <default>Settings</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Configurações</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Settings</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="label.logzio_config.ds_token">
+            <default>Token</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Token</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Token</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="label.logzio_config.ds_type">
+            <default>Type</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Tipo de Log</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Type</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="label.logzio_config.id_logzio_config">
+            <default>ID</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Código</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>ID</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="label.logzio_config.path">
+            <default>Logz.IO &gt; Settings &gt;</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Logz.IO &gt; Configurações</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Logz.IO &gt; Settings</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="permission.logzio">
+            <default>General Settings</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Configurações Gerais</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>General Settings</value>
+                </entry>
+            </translations>
+        </label>
+        <label key="permission.logzio.settings">
+            <default>Sender Settings</default>
+            <translations>
+                <entry>
+                    <key>pt</key>
+                    <value>Configurações de Envio</value>
+                </entry>
+                <entry>
+                    <key>en</key>
+                    <value>Sender Settings</value>
+                </entry>
+            </translations>
+        </label>
+    </labels>
+</ns2:language-label-package>

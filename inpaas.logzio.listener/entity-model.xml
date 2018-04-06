@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:entity-package xmlns:ns2="br.com.inpaas.model.entity" xmlns:ns3="br.com.inpaas.entitymanager">
+    <entities>
+        <entity alias="LOGZIO_CONFIG" audit-delete="true" audit-insert="true" audit-update="true" change-tracking="true" core="false" finders-fixed="false" form-key="inpaas.logzio.forms.config" form-type="v2" managed="true" name="LOGZIO_CONFIG" next-key="SEQUENCE" ownership="false" permission-key="permission.logzio.settings">
+            <attributes>
+                <attribute alias="id" audit="true" name="ID_LOGZIO_CONFIG" primary-key="XPK_LOGZIO_CONFIG" required="true" searchable="false" type="BIGINT"/>
+                <attribute alias="token" audit="true" name="DS_TOKEN" required="false" searchable="false" size="255" type="VARCHAR"/>
+                <attribute alias="type" audit="true" default="inpaas_logs" name="DS_TYPE" required="true" searchable="false" size="80" type="VARCHAR"/>
+            </attributes>
+            <entity-queries/>
+            <triggers>
+                <trigger after="false" inactive="false" on-delete="false" on-insert="true" on-update="false">
+                    <condition>{}</condition>
+                    <description>Singleton Settings</description>
+                    <key>d8f6a58e-99d6-49c7-9bdc-12e7fde32440</key>
+                    <source>if (data["ID_LOGZIO_CONFIG"] &gt; 1) throw "error.logzio.settings.singleton";</source>
+                </trigger>
+                <trigger after="false" inactive="false" on-delete="false" on-insert="false" on-update="true">
+                    <condition>{}</condition>
+                    <description>Re-Attach Listener</description>
+                    <key>4cd814a1-1e81-42fc-a7cd-5cfa3132a05d</key>
+                    <source>require("inpaas.logzio.listener.appender").attach(this["new"]);</source>
+                </trigger>
+                <trigger after="false" inactive="false" on-delete="true" on-insert="false" on-update="false">
+                    <condition>{}</condition>
+                    <description>Singleton Settings</description>
+                    <key>a18d6c4d-0d57-4587-82e7-0f71eef72896</key>
+                    <source>throw "error.logzio.settings.singleton";</source>
+                </trigger>
+            </triggers>
+        </entity>
+    </entities>
+</ns3:entity-package>

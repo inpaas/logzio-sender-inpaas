@@ -1,0 +1,8 @@
+{
+  "jars" : [ {
+    "key" : "F653CB18-6D60-458F-931A-32B23405D358",
+    "bundleId" : "inpaas.logzio",
+    "url" : "http://release.inpaas-sandbox.com/extensions/logzio-sender-1.0/logzio-1.2.jar"
+  } ],
+  "key" : null
+}

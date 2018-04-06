@@ -1,0 +1,12 @@
+{
+  "policy" : "permission.logzio.settings",
+  "parent" : "menu.admin.logzio",
+  "type" : "S",
+  "sequence" : 1,
+  "icon" : "fa fa-fw fa-file-text-o",
+  "label" : "label.logzio_config",
+  "itemtype" : "L",
+  "itemkey" : "/forms-v2/inpaas.logzio.forms.config/1",
+  "inactive" : false,
+  "key" : "menu.admin.logzio.settings"
+}

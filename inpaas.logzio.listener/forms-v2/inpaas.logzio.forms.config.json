@@ -1,0 +1,98 @@
+{
+  "title" : "LogzIO Settings",
+  "key" : "inpaas.logzio.forms.config",
+  "dataSourceType" : "E",
+  "dataSourceKey" : "LOGZIO_CONFIG",
+  "structure" : {
+    "key" : "inpaas.logzio.forms.config",
+    "label" : "label.forms.inpaas.logzio.forms.config.title",
+    "pagination" : {
+      "type" : "server",
+      "countPerPage" : 10
+    },
+    "dataSource" : {
+      "type" : "E",
+      "moduleKey" : "inpaas.logzio.listener",
+      "key" : "LOGZIO_CONFIG"
+    },
+    "views" : {
+      "edit" : {
+        "actions" : [ {
+          "action" : "save",
+          "label" : "Save",
+          "name" : "save",
+          "notDisplayLabel" : false,
+          "saveAndStay" : true
+        } ],
+        "breadcrumb" : [ {
+          "path" : "label.logzio_config.path"
+        }, {
+          "bind" : ""
+        } ]
+      },
+      "filter" : { }
+    },
+    "fields" : [ {
+      "meta" : {
+        "bind" : "type",
+        "maxLength" : 80,
+        "type" : "string",
+        "visible" : {
+          "type" : "boolean",
+          "expression" : true
+        },
+        "required" : {
+          "type" : "boolean",
+          "expression" : false
+        },
+        "disabled" : {
+          "type" : "boolean",
+          "expression" : false
+        }
+      },
+      "views" : {
+        "edit" : {
+          "position" : 1,
+          "size" : "5"
+        }
+      },
+      "label" : "label.logzio_config.ds_type",
+      "name" : "inputtype",
+      "id" : 0
+    }, {
+      "meta" : {
+        "bind" : "token",
+        "maxLength" : 255,
+        "type" : "string",
+        "visible" : {
+          "type" : "boolean",
+          "expression" : true
+        },
+        "required" : {
+          "type" : "boolean",
+          "expression" : false
+        },
+        "disabled" : {
+          "type" : "boolean",
+          "expression" : false
+        }
+      },
+      "views" : {
+        "edit" : {
+          "position" : 1,
+          "size" : "5"
+        }
+      },
+      "label" : "label.logzio_config.ds_token",
+      "name" : "inputtoken",
+      "id" : 0
+    } ],
+    "moduleKey" : "inpaas.logzio.listener",
+    "allowanon" : "N",
+    "permission" : null,
+    "template" : null
+  },
+  "templateKey" : null,
+  "permissionKey" : null,
+  "allowAnon" : "N"
+}

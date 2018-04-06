@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:security-package xmlns:ns2="br.com.inpaas.permission">
+    <roles>
+        <role key="usergroup.developer" name="Developer"/>
+    </roles>
+    <permissions>
+        <permission inactive="false" key="permission.logzio.settings">
+            <group>permission.logzio</group>
+            <label>permission.logzio.settings</label>
+            <types>
+                <view>true</view>
+                <insert>false</insert>
+                <update>true</update>
+                <delete>false</delete>
+                <execute>false</execute>
+            </types>
+        </permission>
+    </permissions>
+    <permission-rules>
+        <permission-rule permission="inpaas.devstudio.permission.entities" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.formdesigner" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.mailing" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.main" role="usergroup.developer">
+            <rules>
+                <update xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <delete xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <insert xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.menu" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.notification" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.permissions" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.publisher" role="usergroup.developer">
+            <rules>
+                <update xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <delete xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <insert>G</insert>
+                <view>G</view>
+                <execute>G</execute>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.settings" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <insert xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.sourcecode" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.devstudio.permission.usergroups" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.scheduler.permission.tasks" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="inpaas.scheduler.taskdevelopment" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete>G</delete>
+                <insert>G</insert>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+        <permission-rule permission="permission.logzio.settings" role="usergroup.developer">
+            <rules>
+                <update>G</update>
+                <delete xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <insert xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <view>G</view>
+                <execute xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            </rules>
+        </permission-rule>
+    </permission-rules>
+</ns2:security-package>
